@@ -1,0 +1,450 @@
+@import '~antd/es/style/themes/default.less';
+@color_yellow:  rgb(249, 176, 6);
+@color_yellow2: #FFFBE6;
+@color_orange: rgb(255, 126, 34);
+
+// all -----
+// margin, padding
+.om_sp_m_lb {
+  margin-left: 6px;
+  margin-bottom: 24px;
+}
+.om_sp_m_lt {
+  margin-left: 6px;
+  margin-top: 24px;
+}
+.om_sp_m_rb {
+  margin-right: 6px;
+  margin-bottom: 24px;
+}
+.om_m_r_12 {
+  margin-right: 12px;
+}
+.om_p_0 {
+  padding: 0;
+}
+.om_p_r {
+  padding-right: 6px !important;
+}
+.om_r_0 {
+  margin: 0;
+}
+.mo_m_b_8 {
+  margin-bottom: 8px;
+}
+.om_m_b_24 {
+  margin-bottom: 24px;
+}
+
+.om_m_0auto {
+  margin: 0 auto !important;
+}
+
+// no border
+.om_bd_none {
+  border: none !important;
+}
+
+// inline-block
+.om_dis_inlinebl {
+  display: inline-block;
+}
+
+// left dotted border
+.om_bd_l_dot {
+  border-left: 2px dotted #CBCBCB !important;
+}
+
+// color
+.om_color_red {
+  color: #E75757 !important;
+}
+.om_color_green {
+  color: #72CD8A !important;
+}
+.om_color_green2 {
+  color: #60CB28 !important;
+}
+.om_color_link_blue {
+  color: #40a9ff !important;
+}
+.om_color_yellow {
+  color: @color_yellow !important;
+}
+.om_color_gray {
+  color: rgba(0, 0, 0, 0.6) !important;
+}
+.om_color_orange {
+  color: @color_orange;
+}
+
+// gray-background
+.om_bg_white {
+  background-color: #FFF !important;
+}
+.om_bg_gray {
+  background-color: #EFF0F0 !important;
+}
+.om_bg_green {
+  background-color: #E6F4DD !important;
+}
+.om_bg_blue {
+  background-color: #e6f7ff !important;
+}
+.om_bg_yellow {
+  background-color: @color_yellow2 !important;
+}
+
+
+// opacity
+.om_opacity_05 {
+  opacity: 0.5 !important;
+}
+
+// align
+.om_txt_align_r {
+  text-align: right !important;
+}
+.om_txt_align_c {
+  text-align: center !important;
+}
+
+// bold text
+.om_txt_bold {
+  font-weight: 700 !important;
+}
+
+// icon - color, size style
+.om_icon_style {
+  color: rgb(85, 85, 85);
+  font-size: 20px;
+}
+
+// for table overflow
+.om_overflow_auto {
+  overflow: auto;
+  overflow-wrap: break-word;
+}
+
+// hide label
+.om_hide_label {
+  :global {
+    .ant-form-item-label {
+      height: 0 !important;
+      padding: 0 !important;
+    }
+    .ant-form-item-required {
+      display: none !important;
+    }
+  }
+}
+
+// hide table row
+.om_hide_table_row {
+  display: none;
+}
+
+// show table row
+.om_show_table_row {
+  display: table-row;
+}
+
+// notification (request.js) -----
+// notification text
+.om_notification_text p {
+  margin: 10px 0 0 0;
+}
+
+// left header logo -----
+.leftHeaderLogo {
+  :global {
+    .ant-pro-sider-menu-logo h1 {
+      margin: 0 auto;
+    }
+  }
+}
+
+// list and adv ui -----
+// expand table
+.expandTable {
+  border: none;
+  :global {
+    .ant-table-thead {
+      display: none;
+    }
+    .ant-table-cell {
+      border: none;
+    }
+    .ant-table tfoot > tr > td {
+      padding: 0;
+    }
+  }
+}
+
+// adv and update ui -----
+// card
+.card {
+  margin-bottom: 24px;
+  :global {
+    .ant-card-head-title {
+      font-weight: 700;
+    }
+
+    .ant-card-head-wrapper {
+      flex-direction: row;
+      align-items: flex-end;
+    }
+  }
+}
+
+
+// list -----
+// for keywoard input - right, bottom margin, and max-width
+.om_list_keyword {
+  margin-right: 6px !important;
+  margin-bottom: 24px !important;
+  max-width: 250px;
+}
+
+// for precise checkbox - left padding
+.om_list_precise {
+  :global {
+    .ant-checkbox{
+      padding-left: 6px;
+    }
+  }
+}
+
+// radio groups for search - right margin
+.om_list_radios {
+  margin-right: 6px !important;
+}
+
+// song list - mainTable (for hide or show column)
+.mainTable {
+  :global {
+    .hideColumn{
+      display: none;
+    }
+  }
+}
+
+// adv ui -----
+// infoBanners
+.infoBanners {
+  :global {
+    .ant-pro-page-header-wrap-row {
+      align-items: flex-end;
+    }
+    .ant-pro-page-header-wrap-extraContent{
+      min-width: 50%!important;
+      text-align: right;
+    }
+  }
+}
+
+// tab style
+.pageHeaderWrapper {
+  :global {
+    .ant-page-header-footer .ant-tabs-bar .ant-tabs-nav .ant-tabs-tab {
+      font-size: 16px;
+      padding: 16px;
+    }
+  }
+}
+
+// header list - created user, time... style
+.headerList {
+  :global {
+    .ant-descriptions-row > td {
+      padding-bottom: 4px;
+    }
+  }
+}
+
+// adv ui (only for no tab ui) -----
+// title no bottom border
+.titleNoBBd {
+  :global {
+    .ant-card-head {
+      border: none;
+    }
+  }
+}
+
+// card add bottom border
+.contentBBd {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f0f0f0;
+  border-radius: 2px 2px 0 0;
+}
+
+// card body no bottom padding
+.cardBodyNoBPd {
+  :global {
+    .ant-card-body {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// card top space
+.cardTopSpace {
+  margin-top: 24px!important;
+}
+
+// left color border card
+.colorBdCard {
+  :global {
+    .ant-card-cover {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 8px;
+      height: 100%;
+      div {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.colorBdCardTitle {
+  font-weight: 700;
+  font-size: 16px;
+}
+.colorBdCardTitle2 {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+// update ui -----
+// search input (autocomplete) add right, bottom label
+.searchMutliLabel {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 10px;
+  bottom: 5px;
+  width:100%;
+}
+.searchLabel {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  right: 10px;
+  top: 65px;
+  width:100%;
+  // fix
+  padding: 2px 32px;
+}
+.searchLabelForLeft {
+  display: flex;
+  justify-content: flex-start;
+  position: absolute;
+  left: 10px;
+  top: 65px;
+  width:100%;
+  // fix
+  padding: 2px 32px;
+}
+
+// formList - like pen_name, member edit lists 
+.formList {
+  :global {
+    .ant-row {
+      display: flex;
+      flex-flow: row nowrap;
+    }
+    .ant-col {
+      padding: 4px;
+    }
+  }
+}
+
+// form.Item - formItem's label add requred start '*' 
+.addRequiredStar {
+  :global {
+    .ant-form-item-label::before {
+      display: inline-block;
+      margin-right: 4px;
+      color: #ff4d4f;
+      font-size: 14px;
+      font-family: SimSun, sans-serif;
+      line-height: 1;
+      content: '*';
+    }
+  }
+}
+
+.hideRequiredStar {
+  :global {
+    .ant-form-item-required::before {
+      display: none !important;
+    }
+  }
+}
+
+// icon for edit table
+.om_td_icon_style {
+  width: 20px;
+}
+.om_icon_btn_style {
+  color: rgb(85, 85, 85);
+  font-size: 16px;
+}
+
+// formTable
+.formTable {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  th, td {
+    vertical-align: top;
+    position: relative;
+    padding: 16px 16px 0 16px;
+    border: none;
+    overflow-wrap: break-word;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  th {
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: 500;
+    text-align: left;
+    background: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 16px;
+  }
+  tr:hover {
+    background: #fafafa;
+  }
+  .lastTr {
+    background: #fff !important;
+    td {
+      border: none;
+      padding-bottom: 8px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+  .bottomPdTd {
+    padding-bottom: 16px;
+  }
+}
+
+// form - submit button width
+.submitBtnWidth {
+  min-width: 130px;
+}
+
+// table th no border
+.tableNoBorder {
+  :global {
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      border-bottom: none;
+    }
+  }
+}
+
